@@ -20,7 +20,8 @@ before_install:
   - SERVICE=$SERVICE make ensure-dependencies
 
 script:
-  - make qa
+  - make lint
+  - npm test
 
 matrix:
   include:
