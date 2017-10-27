@@ -20,7 +20,7 @@ before_install:
   - SERVICE=$SERVICE make ensure-dependencies
 
 script:
-  - make qa
+  - SERVICE_ENV="test" make qa
 
 matrix:
   include:
