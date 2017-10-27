@@ -3,7 +3,7 @@ module.exports = {
     transport: 'console'
   },
   crawler: {
-    frequency: 10000,
+    frequency: 30000,
     autostart: true
   }
 };
