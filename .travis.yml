@@ -22,8 +22,8 @@ before_install:
   - sleep 3
 
 script:
-  - make lint
-  - npm test
+  - make qa
+  - TRAVIS_BUILD_ID=$TRAVIS_BUILD_ID TRAVIS_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER make brand
 
 matrix:
   include:
